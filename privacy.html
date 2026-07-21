@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy · Soom</title>
+<meta name="description" content="Soom privacy policy. Your protocol and health data stay on your phone.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --surface: #131619;
+    --text: #E9EAEC;
+    --text-secondary: #9BA0A6;
+    --rule: rgba(255, 255, 255, 0.10);
+    --accent: #FFC0AA;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    background: var(--surface);
+    color: var(--text);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    padding: 72px 24px 96px;
+  }
+  main { max-width: 640px; margin: 0 auto; }
+  .wordmark {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: 22px;
+    color: var(--text);
+    letter-spacing: 0.02em;
+    margin-bottom: 56px;
+  }
+  h1 {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 1.15;
+    margin-bottom: 12px;
+  }
+  .updated {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .lede {
+    color: var(--text);
+    font-size: 18px;
+    margin: 28px 0 8px;
+  }
+  .lede strong { font-weight: 600; }
+  h2 {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 1.2;
+    margin: 52px 0 14px;
+    padding-top: 28px;
+    border-top: 1px solid var(--rule);
+  }
+  p { margin-bottom: 14px; color: var(--text-secondary); }
+  p strong { color: var(--text); font-weight: 600; }
+  ul { margin: 0 0 14px 20px; color: var(--text-secondary); }
+  li { margin-bottom: 8px; }
+  li strong { color: var(--text); font-weight: 600; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover, a:focus-visible { text-decoration: underline; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+  .contact {
+    margin-top: 20px;
+    color: var(--text-secondary);
+  }
+  @media (max-width: 480px) {
+    body { padding: 48px 20px 72px; }
+    h1 { font-size: 34px; }
+    h2 { font-size: 24px; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    main { animation: rise 0.5s ease-out; }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: none; }
+    }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="wordmark">Soom</div>
+
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: July 2026</p>
+
+  <p class="lede">Soom is a habit and protocol tracking app for iPhone, developed by Litchi s.r.o., based in Slovakia ("we", "us"). This policy explains what data Soom handles, where it lives, and what leaves your device.</p>
+  <p class="lede"><strong>The short version: your protocol and health data stay on your phone.</strong> We do not operate servers that store your personal records.</p>
+
+  <h2>The design principle</h2>
+  <p>Soom is built local-first. Your habits, micros, completion history, and health metrics are stored in a database strictly on your device. Soom works fully offline, and there are no user accounts in this version of the app.</p>
+
+  <h2>Data stored on your device</h2>
+  <ul>
+    <li><strong>Your protocol and preferences.</strong> Micros, sessions, schedules, completion history, and settings (day window, goals, start screen, and an optional display name).</li>
+    <li><strong>Apple Health data (only with your explicit consent).</strong> With your permission, Soom reads sleep, steps, heart rate variability, and resting heart rate to display them alongside your day and to compute on-device summaries, such as comparing last night's sleep to your own recent average. Health data is processed entirely on your device and is never transmitted to us or to third parties. Soom does not write data to Apple Health. You can revoke access at any time and Soom keeps working without it.</li>
+    <li><strong>A device identifier.</strong> A randomly generated ID created on first launch, used to keep your data consistent on your device. It is not linked to your identity or any real-world information.</li>
+  </ul>
+  <p>Deleting the app removes your protocol and health-derived data. (A residual random identifier stored by iOS in the system Keychain may briefly outlive deletion; Soom clears it automatically if the app is ever reinstalled.) A data export feature is planned for a future version; until then, your data can be deleted at any time via Settings, Your Data, Delete all data.</p>
+
+  <h2>What leaves your device (and what doesn't)</h2>
+  <ul>
+    <li><strong>Analytics.</strong> We use PostHog to gather basic usage analytics, such as which screens are opened and whether features work, to help us improve the app. Analytics are tied to the random device identifier, never to your name, contact information, or health data. Health metrics never appear in analytics, logs, or crash reports.</li>
+    <li><strong>Crash reporting.</strong> We use Sentry to capture crash reports so we can fix bugs. Crash reports contain technical information (device model, iOS version, stack traces) and never include your protocol or health data.</li>
+  </ul>
+  <p>Our third-party service providers process this technical data in compliance with EU data protection regulations.</p>
+  <p><strong>TestFlight.</strong> If you use Soom through Apple's TestFlight beta program, Apple may collect crash logs and any feedback you submit through the TestFlight app, in accordance with Apple's own privacy policy.</p>
+  <p><strong>What we never do.</strong> No advertising SDKs. No data brokers. No selling or monetization of your personal data.</p>
+
+  <h2>Apple HealthKit compliance</h2>
+  <p>Soom's integration with Apple HealthKit strictly follows Apple's developer guidelines. Health data is used exclusively to provide core app features directly on your device. It is never used for advertising or marketing, never sold, and never transferred to data brokers or analytics platforms. You can grant or revoke Soom's HealthKit permissions at any time via iPhone Settings, Privacy &amp; Security, Health, Soom.</p>
+
+  <h2>Legal bases and your rights (EU/EEA)</h2>
+  <p>Under the EU General Data Protection Regulation (GDPR), we process data under the following legal bases:</p>
+  <ul>
+    <li><strong>Contractual necessity (Art. 6(1)(b) GDPR):</strong> to provide the app's core functionality on your device.</li>
+    <li><strong>Explicit consent (Art. 9(2)(a) GDPR):</strong> for accessing and processing Apple Health data on-device, granted by you via the iOS permission prompt and revocable at any time.</li>
+    <li><strong>Legitimate interest (Art. 6(1)(f) GDPR):</strong> for anonymized usage analytics and crash reporting to maintain and improve the app.</li>
+  </ul>
+  <p>Because your protocol and health data reside strictly on your device, we do not hold a copy of them. You can access, modify, or delete this data directly inside the app or by deleting the application. For inquiries regarding analytics data or to exercise your GDPR rights, contact us at <a href="mailto:hello@dailysoom.com">hello@dailysoom.com</a>. You also have the right to lodge a complaint with a supervisory authority; in Slovakia this is the Úrad na ochranu osobných údajov (Office for Personal Data Protection of the Slovak Republic).</p>
+
+  <h2>Children's privacy</h2>
+  <p>Soom is not intended for or directed at children under the age of 16. We do not knowingly collect personal data from children.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If our data practices change, for example if optional cloud sync launches in a future version, this policy will be updated and the app will note the change before any new data processing occurs.</p>
+
+  <h2>Contact</h2>
+  <p class="contact">Litchi s.r.o.<br>
+  Bratislava, Slovakia<br>
+  <a href="mailto:hello@dailysoom.com">hello@dailysoom.com</a></p>
+</main>
+</body>
+</html>
