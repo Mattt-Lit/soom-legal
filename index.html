@@ -95,7 +95,7 @@
   <div class="wordmark">Soom</div>
 
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: July 2026</p>
+  <p class="updated">Last updated: August 2026</p>
 
   <p class="lede">Soom is a habit and protocol tracking app for iPhone, developed by Litchi s.r.o., based in Slovakia ("we", "us"). This policy explains what data Soom handles, where it lives, and what leaves your device.</p>
   <p class="lede"><strong>The short version: your protocol and health data stay on your phone.</strong> We do not operate servers that store your personal records.</p>
@@ -107,6 +107,7 @@
   <ul>
     <li><strong>Your protocol and preferences.</strong> Micros, sessions, schedules, completion history, and settings (day window, goals, start screen, and an optional display name).</li>
     <li><strong>Apple Health data (only with your explicit consent).</strong> With your permission, Soom reads sleep, steps, heart rate variability, and resting heart rate to display them alongside your day and to compute on-device summaries, such as comparing last night's sleep to your own recent average. Health data is processed entirely on your device and is never transmitted to us or to third parties. Soom does not write data to Apple Health. You can revoke access at any time and Soom keeps working without it.</li>
+    <li><strong>Calendar events (only with your explicit consent).</strong> With your permission, Soom reads events from your iOS calendar to display them alongside your micros on the timeline and, if you choose, on the home-screen widget. Soom's calendar access is read-only: it never creates, edits, or deletes events. Calendar data is displayed live, is never stored in Soom's database, and never leaves your device. You can choose which calendars are shown, and you can revoke access at any time via iPhone Settings — Soom keeps working without it.</li>
     <li><strong>A device identifier.</strong> A randomly generated ID created on first launch, used to keep your data consistent on your device. It is not linked to your identity or any real-world information.</li>
   </ul>
   <p>Deleting the app removes your protocol and health-derived data. (A residual random identifier stored by iOS in the system Keychain may briefly outlive deletion; Soom clears it automatically if the app is ever reinstalled.) A data export feature is planned for a future version; until then, your data can be deleted at any time via Settings, Your Data, Delete all data.</p>
@@ -114,7 +115,7 @@
   <h2>What leaves your device (and what doesn't)</h2>
   <ul>
     <li><strong>Analytics.</strong> We use PostHog to gather basic usage analytics, such as which screens are opened and whether features work, to help us improve the app. Analytics are tied to the random device identifier, never to your name, contact information, or health data. Health metrics never appear in analytics, logs, or crash reports.</li>
-    <li><strong>Crash reporting.</strong> We use Sentry to capture crash reports so we can fix bugs. Crash reports contain technical information (device model, iOS version, stack traces) and never include your protocol or health data.</li>
+    <li><strong>Crash reporting.</strong> We use Sentry to capture crash reports so we can fix bugs. Crash reports contain technical information (device model, iOS version, stack traces) and never include your protocol, health, or calendar data. When a report is received, Sentry's EU servers may derive an approximate, city-level location from the network connection; we do not store this with your data.</li>
   </ul>
   <p>Our third-party service providers process this technical data in compliance with EU data protection regulations.</p>
   <p><strong>TestFlight.</strong> If you use Soom through Apple's TestFlight beta program, Apple may collect crash logs and any feedback you submit through the TestFlight app, in accordance with Apple's own privacy policy.</p>
